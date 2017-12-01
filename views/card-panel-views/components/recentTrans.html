@@ -1,0 +1,17 @@
+<div>
+<table>
+    <tr ng-repeat="item in vm.components.dirs[1].trans">
+        <td>{{item.date}}</td>
+        <td>{{item.merchant}}</td>
+        <td>+{{item.amount | currency}}</td>
+    </tr>
+    <tr class="recent-trans-total">
+        <td  colspan="3">+{{vm.components.dirs[1].transTotal | currency}}</td>
+    </tr>
+    <tr class="recent-trans-payment">
+        <td><h1>Recent Payment</h1></td>
+        <td><h3>(paid on 05/02/2017)</h3></td>
+        <td>-$120.00</td>
+    </tr>
+</table>
+</div>

@@ -1,0 +1,28 @@
+.turnCardOff {
+    flex-direction: column;
+}
+
+.turnCardOff-display {
+    display: flex;
+    align-items: center;
+}
+
+div.onoff:active, div.onoff:focus {
+    background: url('../images/off.png') no-repeat;
+    width: 100px;
+    height: 40px;
+    background-position-x: 15px;
+}
+.onoff {
+    background: url('../images/on.png') no-repeat;
+    width: 100px;
+    height: 40px;
+    background-position-x: 15px;
+}
+
+.turnCardOff-display td {
+    font-style: italic;
+    font-size: 20px;
+    color: #666;
+    font-weight: 100;
+}

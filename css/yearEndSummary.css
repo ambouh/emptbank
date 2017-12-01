@@ -1,0 +1,114 @@
+.section-datepicker {
+    display: flex;
+    align-items: center;
+}
+
+.section-datepicker.item-2 a {display: block;}
+
+.section-datepicker .item-2 a {
+    display: block;
+}
+
+.section-datepicker .item-1 p {
+    margin: 0;
+}
+
+.section-datepicker .item-1 {
+    margin-right: 30px;
+}
+
+.section-datepicker .item-1 a, .section-datepicker .item-2 a {
+    text-decoration: none;
+    color: rgb(0, 204, 51);
+}
+
+.section-datepicker .item-2 select {
+    padding: 8px 0;
+    font-size: 10px;
+}
+
+.section-button-statements {
+    margin-top: 10px;
+}
+
+.section-button-statements p {
+    margin: 0px;
+}
+
+.section-button-statements p.item-4 {
+    font-size: 13px;
+    color: #666;
+    font-weight: 600;
+}
+
+.section-button-statements p.item-4 .cost {
+    margin-left: 15px;
+}
+
+p.item-5 span.cost {
+    color: rgb(0, 204, 51);
+    font-weight: 600;
+}
+
+p.item-5 i {
+    color: rgb(0, 204, 51);
+    font-weight: 600;
+}
+
+.item-5 span.date {
+    margin-left: 15px;
+}
+
+table.section-table {
+    width: 500px;
+    font-size: 14px;
+}
+.section-table thead {
+    border: 1px solid #999999;
+}
+
+table.section-table td, table.section-table th {
+    text-align: left;
+}
+
+.section-table tr.last-item td {
+    border-top: none;
+    font-weight: bold;
+}
+
+#section-table thead tr td {
+    border-bottom: 1px solid #666;
+}
+
+.section-table thead tr th {
+    border-bottom: 1px solid #999999;
+    margin: 0;
+    padding: 0;
+}
+
+#paymentDisplay.grey-color {
+    background: rgba(250, 250, 250, 1);
+}
+
+.section-table button.submit-button {
+    border: none;
+    background: #00cc66;
+    height: 34px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+span.section-table-title {
+    font-size: 16px;
+    font-weight: 200;
+    color: #575E96;
+}
+
+th.recent-payments-credits {
+    width: 340px;
+}
+
+.posted {
+    margin-top: 30px;
+}

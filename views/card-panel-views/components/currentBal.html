@@ -1,0 +1,17 @@
+<div>
+    <ul id="card-outline">
+        <li>
+            <h1>{{vm.components.dirs[0].bodyHeaders[0]}}</h1>
+            <h3>{{vm.components.dirs[0].credAvail | currency}} of {{vm.components.dirs[0].credTotal | currency}}</h3>
+        </li>
+        <li>
+            <h1>{{vm.components.dirs[0].bodyHeaders[1]}}</h1>
+            <h3>{{vm.components.dirs[0].credSpent | currency}} as in {{vm.components.dirs[0].lastSpentDate | date}}</h3>
+        </li>
+        <li>
+            <h1>{{vm.components.dirs[0].bodyHeaders[2]}}</h1>
+            <h3> {{vm.components.dirs[0].dueDate}}</h3>
+            <a href="#"><i class="fa fa-calendar-plus-o fa-lg"></i></a>
+        </li>
+    </ul>
+</div>

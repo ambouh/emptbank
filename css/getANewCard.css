@@ -1,0 +1,39 @@
+button.submit-button {
+    border: none;
+    background: #00cc66;
+    height: 34px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+#getANewCard .form-group {
+    display: block;
+    width: 700px;
+    margin: 10px 0;
+}
+
+#getANewCard .form-group label {
+    float: left;
+    width: 200px;
+}
+
+#getANewCard .form-group span {display: block;font-size: x-small;}
+
+#getANewCard .form-group div {
+    width: 200px;
+    display: inline-block;
+}
+
+.form-group-btn {
+    margin-left: 200px;
+    padding: 10px 30px;
+    margin-top: 20px;
+}
+
+#getANewCard .form-group input {
+    border: none;
+    background: #F2F2F2;
+    border-radius: 5px;
+    padding: 5px 10px;
+}

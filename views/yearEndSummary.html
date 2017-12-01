@@ -1,0 +1,158 @@
+<section id="statements-wrapper">
+    <section class="main-content">
+        <h1 class="title">Account Activity</h1>
+        <div id="card-content" style="margin-bottom: 50px; flex-direction: column; margin-left: 160px;">
+            <h2>Recent Account Activity</h2>
+            <div class="section-datepicker">
+                <div class="item-1">
+                    <p>June 1 - June 21, 2017</p>
+                    <a href="#">Different Date</a>
+                </div>
+                <div class="item-2">
+                    <a href="#">Statements</a>
+                    <select name="date">
+                        <option value="apr">April 3 - May 2</option>
+                        <option value="mar">March 3 - April 2</option>
+                        <option value="feb">February 3 - March 2</option>
+                        <option value="jan">January 3 - February 2</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="section-button-statements">
+                <div class="item-3">
+                    <a href="#">[print]</a>
+                    <a href="#">[download]</a>
+                </div>
+                <p class="item-4">Last Statement Balance (as of June 1, 2017) <span class="cost">$2,340.00</span></p>
+                <p class="item-5">Minimum Payment Of <span class="cost">$62.00</span>
+                    <span class="date">Due on July 1, 2017 <i ng-class="item.icon" aria-hidden="true" class="fa fa-bell-o"></i></span>
+                </p>
+            </div>
+        </div>
+        <div id="paymentInterface">
+            <ul>
+                <li>Recent Activity</li>
+                <li>Pending Transactions</li>
+                <li>Statements</li>
+                <li>Search Transactions</li>
+                <li>Fees/Interest</li>
+            </ul>
+            <div id="paymentDisplay" class="grey-color">
+                <span>All Recent Activity</span>
+                <div class="">
+                    <span class="section-table-title">Pending Transactions</span>
+                    <table class="section-table" rules="group">
+                        <thead style="">
+                        <tr class="">
+                            <th>Date of Transaction</th>
+                            <th>Place of Transaction</th>
+                            <th>Amount</th>
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                        <tr>
+                            <td>5/5/2016</td>
+                            <td>Shell</td>
+                            <td>+$500.00</td>
+                        </tr>
+                        <tr class="recent-trans-total last-item">
+                            <td colspan="2"></td>
+                            <td>+$147.42</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <table class="section-table" rules="group">
+                        <thead style="">
+                        <tr class="">
+                            <th colspan="2" class="recent-payments-credits">Recent Payments and Credits</th>
+                            <th>-120.00</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td colspan="2">Balance As Of Today</td>
+                            <td>$2,280.00</td>
+                        </tr>
+                        <tr class="recent-trans-total last-item">
+                            <td colspan="2">Next Statement Closes on</td>
+                            <td>July 2, 2017</td>
+                        </tr>
+                        </tbody>
+                        <tfoot>
+                        <tr>
+                            <td>
+                                <button class="submit-button">Make or schedule a Payment</button>
+                            </td>
+                        </tr>
+
+                        </tfoot>
+                    </table>
+                </div>
+                <div class="posted">
+                    <span class="section-table-title">Posted Transactions</span>
+                    <table class="section-table" rules="group">
+                        <thead style="">
+                        <tr class="">
+                            <th>Date of Transaction</th>
+                            <th>Place of Transaction</th>
+                            <th>Amount</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>5/5/2016</td>
+                            <td>Shell</td>
+                            <td>+$500.00</td>
+                        </tr>
+                        <tr class="recent-trans-total last-item">
+                            <td colspan="2"></td>
+                            <td>+$147.42</td>
+                        </tr>
+                        </tbody>
+                        <tfoot>
+                        <tr>
+                            <td>
+                                <button class="submit-button">Make or schedule a Payment</button>
+                            </td>
+                        </tr>
+
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div id="self-service-content">
+            <!--self-service directive-->
+            <div>
+                <div id="self-service-header">
+                    <span class="ng-binding">Self Service Shortcuts</span>
+                </div>
+                <div id="self-service-body">
+                    <ul id="shortcuts">
+                        <li>
+                            <a href="#" class="ng-binding">Turn Off Account</a>
+                        </li>
+                        <li>
+                            <a href="#" class="ng-binding">Turn Off Account</a>
+                        </li>
+                        <li>
+                            <a href="#" class="ng-binding">Turn Off Account</a>
+                        </li>
+                        <li>
+                            <a href="#" class="ng-binding">Turn Off Account</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <a ng-click="vm.payCurrentBal()">
+                <div class="check-score-free">
+                    <span>Check Your Score For FREE!</span>
+                </div>
+            </a>
+        </div>
+    </section>
+</section>

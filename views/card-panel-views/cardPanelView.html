@@ -1,0 +1,38 @@
+<div ng-controller="CardPanelCtrl as vm" class="card-panel current-card ">
+    <!--directive-->
+        <div class="cp-header {{vm.components.dirs[0].id}}">
+            <h1>{{vm.components.dirs[0].title}}</h1>
+            <span>{{vm.components.dirs[0].amount | currency}}</span>
+            <button ui-sref="statements">{{vm.components.dirs[0].buttonTitle}}</button>
+        </div>
+        <div class="cp-body">
+            <div current-bal></div>
+        </div>
+</div>
+
+<div ng-controller="CardPanelCtrl as vm" class="card-panel current-card">
+    <!--directive-->
+    <div class="cp-header {{vm.components.dirs[1].id}}">
+        <h1>{{vm.components.dirs[1].title}}</h1>
+        <span>{{vm.components.dirs[1].amount | currency}}</span>
+        <button ui-sref="yearEndSummary">{{vm.components.dirs[1].buttonTitle}}</button>
+    </div>
+        <div class="cp-body">
+            <div recent-trans=""></div>
+        </div>
+
+
+</div>
+
+<div ng-controller="CardPanelCtrl as vm" class="card-panel current-card">
+    <!--directive-->
+    <div class="cp-header {{vm.components.dirs[2].id}}">
+        <h1>{{vm.components.dirs[2].title}}</h1>
+        <span>{{vm.components.dirs[2].amount | currency}}</span>
+        <button ui-sref="redeemYourReward">{{vm.components.dirs[2].buttonTitle}}</button>
+    </div>
+    <div class="cp-body">
+        <div recent-cash=""></div>
+    </div>
+
+</div>

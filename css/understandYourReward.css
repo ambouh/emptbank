@@ -1,0 +1,41 @@
+.understand-wrapper {
+    width: 800px;
+}
+
+.understand-display {
+    width: 750px;
+    margin: 0 5px;
+    min-height: 300px;
+    background: #c0ecc0;
+}
+
+.understand-options ul li {
+    background: #f8f8f8;
+    display: inline-block;
+    display: inline-flex;
+    width: 248px;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+    /* outline: 1px solid #ccc; */
+}
+
+.understand-options ul {
+    margin: 0;
+    padding-left: 0;
+}
+
+.slideshow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.understand-options ul li a {
+    color: #33cc33;
+    text-decoration: none;
+}
+
+.understand-options ul li:hover {
+    background: #fdfafa;
+}

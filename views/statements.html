@@ -1,0 +1,117 @@
+<section id="statements-wrapper">
+    <section class="main-content">
+        <h1 class="title">Pay Your Bills</h1>
+        <div id="card-content">
+            <div id="signature-card"></div>
+            <div class="card-info">
+                <p>Making payments online is easy. You'll need to confirm the payment account you want to use to make the payment. You can check to make sure your payment is posted on the Payment History page.
+                </p>
+                <p style="font-style: italic">
+                    Please note that any scheduled payments may be cancelled in the event that your credit card is statused Lost/Stolen or if your card number changes
+                </p>
+            </div>
+        </div>
+        <div id="paymentInterface">
+            <ul>
+                <li>Make a Payment</li>
+                <li>Payment History</li>
+                <li>Change Payment Due</li>
+                <li>Set Up Auto Pay</li>
+                <li>Manage Your Bank Account</li>
+            </ul>
+            <div id="paymentDisplay">
+                <span>Make A Payment</span>
+                <div id="paymentDisplayContent">
+                    <div class="progressBar">
+                        <div>$2,000<br> Minimum Due</div>
+                        <span>$8,000<br>Amount Remaining</span>
+                    </div>
+                    <div class="amountToPay">
+                        <span>Select The Amount You Would Like To Pay</span>
+                        <div class="amountSelection">
+                            <input type="radio">$2,000
+                            <span>Minimum Payment Due - 06-02-2017</span>
+                        </div>
+                        <div class="amountSelection">
+                            <input type="radio">$2,000
+                            <span>Minimum Payment Due - 06-02-2017</span>
+                        </div>
+                        <div class="amountSelection">
+                            <input type="radio">$2,000
+                            <span>Minimum Payment Due - 06-02-2017</span>
+                        </div><div class="amountSelection">
+                        <input type="radio">Other Amount
+                        <input type="text" placeholder="$">
+                    </div>
+                    </div>
+                    <div class="selectDateToPay">
+                        <span>Select The Date You Would Like To Pay</span>
+                        <input type="text">
+                    </div>
+                    <div class="manageAccount">
+                        <span>Manage Your Payment Account</span>
+                        <div class="AccountPaymentOptions">
+                            <div><input type="radio"> Pay with your Checking Account ending 1234</div>
+                            <div class="addAnAccountOption">
+                                <span class="title">Add an additional Account</span>
+                                <ul>
+                                    <li>Type of Account</li>
+                                    <li><input type="radio">Checking</li>
+                                    <li><input type="radio">Saving</li>
+                                </ul>
+                                <div>
+                                    <span class="title">Account Nickname(optional)</span>
+                                    <input type="text">
+                                </div>
+                                <div>
+                                    <span class="title">Routing Number</span>
+                                    <input type="text">
+                                </div>
+                                <div>
+                                    <span class="title">Account Number</span>
+                                    <input type="text">
+                                </div>
+
+                                <button>Continue</button>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div id="self-service-content">
+            <!--self-service directive-->
+            <div>
+                <div id="self-service-header">
+                    <span class="ng-binding">Self Service Shortcuts</span>
+                </div>
+                <div id="self-service-body">
+                    <ul id="shortcuts">
+                        <li>
+                            <a href="#" class="ng-binding">Turn Off Account</a>
+                        </li>
+                        <li>
+                            <a href="#" class="ng-binding">Turn Off Account</a>
+                        </li>
+                        <li>
+                            <a href="#" class="ng-binding">Turn Off Account</a>
+                        </li>
+                        <li>
+                            <a href="#" class="ng-binding">Turn Off Account</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <a ng-click="vm.payCurrentBal()">
+                <div class="check-score-free">
+                    <span>Check Your Score For FREE!</span>
+                </div>
+            </a>
+        </div>
+    </section>
+</section>
+

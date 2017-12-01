@@ -1,0 +1,106 @@
+div#overview {
+    display: flex;
+    flex-direction: row;
+}
+.content-1-overview {
+    background: #c0ecc0;
+    margin-right: 15px;
+}
+
+.content-2-overview {
+    /*background: #f3dec6;*/
+    margin-right: 15px;
+}
+
+.side-overview {
+    background: #ffffbb;
+    width: 187px;
+}
+
+.panel {
+    width: 475px;
+}
+
+.panel>h3 {
+    width: 465px;
+    background: #575e96;
+    color: #fff;
+    margin: 0;
+    padding: 10px 5px;
+}
+
+.creditCards {
+    width: 450px;
+    min-height: 300px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    margin: 10px auto;
+}
+
+.content-1-card {
+    width: 430px;
+    height: 100px;
+    /* background: #e4e4e4; */
+    margin: 25px 10px;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #b9b9b9;
+}
+
+span.title-card {
+    font-size: 20px;
+    font-family: arial;
+    font-weight: 100;
+    display: block;
+    padding: 10px;
+    color: rgb(0, 204, 51);
+}
+
+.creditCards>div:last-child {
+    border-bottom: none;
+}
+
+.card {
+    width: 90px;
+    background: url('../images/signature-card-s.png');
+    height: 60px;
+    margin: 15px 10px;
+    border-radius: 5px;
+}
+
+.card-info-content-1 {
+    /* background: #aaaaf3; */
+    height: 100%;
+    width: 225px;
+}
+
+.card-link {
+    width: 100px;
+    /* background: #cacaf7; */
+    height: 100%;
+}
+
+.card-link li {
+    font-size: 12px;
+    list-style: none;
+}
+
+.card-link ul {
+    text-align: center;
+    padding: 0;
+}
+
+.card-link li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #0c3;
+    font-weight: 100;
+}
+
+ul {}
+
+.card-info-content-1 ul {
+    list-style: none;
+    padding: 10px 10px;
+    font-size: 14px;
+}

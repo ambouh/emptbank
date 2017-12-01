@@ -1,0 +1,191 @@
+section#statements-wrapper {
+    min-width: 1000px;
+    min-height: 100vh;
+    padding-top: 40px;
+    display: flex;
+    color: #999999;
+}
+
+#statements-wrapper>section:nth-child(1) {
+    min-width: 869px;
+}
+
+div.card-info {
+    max-width: 600px;
+    margin-left: 15px;
+}
+#card-content {
+    display: flex;
+    font-size: 14px;
+    color: #999999;
+    margin-bottom: 50px;
+}
+
+.main-content h1.title {
+    color: #575E96;
+    font-size: 36px;
+    font-weight: 100;
+    margin: 0px 0 20px;
+    position: relative;
+    left: -50px;
+}
+
+div#paymentInterface {
+    display: flex;
+}
+
+#paymentDisplay>span {
+    display: block;
+    margin: 23px 0 15px;
+    padding: 15px 0 15px 15px;
+    position: relative;
+    width: 635px;
+    background: #fff;
+    color: #575e96;
+    font-size: 20px;
+}
+
+div#paymentInterface ul {
+    list-style: none;
+    padding: 0;
+    font-size: 12px;
+}
+
+#paymentDisplay {
+    background: #eaeaea;
+    width: 650px;
+    min-height: 300px;
+    margin: 0 15px 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div#paymentInterface ul li {
+    margin: 10px 0;
+}
+.progressBar {
+    width: 600px;
+    display: flex;
+    background: #fff;
+    border-radius: 5px;
+    font-size: 12px;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.progressBar>div {
+    width: 20%;
+    padding: 10px;
+    background: #00cc66;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.progressBar>span {
+    display: block;
+    padding: 10px;
+}
+
+.amountToPay {
+    padding-top: 20px;
+}
+
+.amountToPay>span {
+    color: #666;
+}
+
+.amountSelection {
+    background: #fff;
+    padding: 15px;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.amountSelection>span {
+    display: inline-block;
+    padding-left: 80px;
+    color: #666;
+}
+
+.amountSelection>input[type="text"] {
+    margin-left: 34px;
+    border: none;
+    background: #eaeaea;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+.selectDateToPay {
+    margin-top: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #d4d4d4;
+}
+
+.selectDateToPay>span {
+    display: block;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.selectDateToPay>input[type="text"] {
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+    margin-left: 15px;
+}
+
+.manageAccount {
+    margin-top: 20px;
+}
+
+.manageAccount>span {
+    color: #666;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.AccountPaymentOptions {
+    font-size: 12px;
+}
+
+.AccountPaymentOptions>div {
+    margin-bottom: 15px;
+}
+
+#statements-wrapper #paymentDisplayContent .AccountPaymentOptions>span.title {
+    color: #666;
+}
+
+#statements-wrapper .addAnAccountOption span.title {
+    color: #666;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.addAnAccountOption>ul {
+    margin: 0;
+    margin-left: 10px;
+    margin-bottom: 15px;
+}
+
+#statements-wrapper #paymentDisplayContent .addAnAccountOption>ul>li {
+    margin: 0;
+}
+
+.AccountPaymentOptions div.addAnAccountOption input[type="text"]{
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+div.addAnAccountOption button {
+    margin-top: 15px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: #00cc66;
+    color: #fff;
+    margin-bottom: 10px;
+}

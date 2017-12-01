@@ -1,0 +1,40 @@
+<section id="home-wrapper">
+    <section>
+        <div id="card-content">
+            <div id="signature-card"></div>
+            <div id="card-info">
+                <ul>
+                    <li ng-repeat="item in vm.home.card">
+                        <span>{{item.text}}</span>
+                    </li>
+                    <li id="about-card">
+                        <account-details></account-details>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="self-service-content">
+            <!--self-service directive-->
+            <div>
+                <div id="self-service-header">
+                    <span>{{vm.home.selfService.title}}</span>
+                </div>
+                <div id="self-service-body">
+                    <ul id="shortcuts">
+                        <li ng-repeat="item in vm.home.shortcuts">
+                            <a href="{{item.link}}">{{item.text}}</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <a ng-click="vm.payCurrentBal()">
+                <div class="check-score-free">
+                    <span>Check Your Score For FREE!</span>
+                </div>
+            </a>
+        </div>
+    </section>
+    <section>
+        <card-panel></card-panel>
+    </section>
+</section>

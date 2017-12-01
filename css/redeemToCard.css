@@ -1,0 +1,86 @@
+#redeem-card {
+    width: 308px;
+    height: 197px;
+    background: antiquewhite;
+    background: url(../images/redeem-card.png) no-repeat;
+    background-size: contain;
+}
+
+span.redeem-amount {
+    display: block;
+    position: relative;
+    left: 168px;
+    top: 66px;
+    color: #3c6;
+    font-weight: bold;
+    font-size: 27px;
+}
+
+
+div#card-info.redeem-reward-section {
+    background: #eaeaea;
+    margin: 0 15px 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 550px;
+    min-height: 400px;
+}
+
+#paymentDisplay {
+    background: #eaeaea;
+    width: 650px;
+    min-height: 300px;
+    margin: 0 15px 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reward-banner {
+    width: 100%;
+    height: 100px;
+    background: white;
+    text-align: center;
+}
+
+.reward-banner span {
+    font-size: 20px;
+    color: #575E96;
+}
+
+#card-info.redeem-reward-section table {
+    width: 100%;
+    min-height: 100px;
+    text-align: left;
+    border-spacing: 0px;
+}
+
+#card-info.redeem-reward-section table tr:nth-child(2) {
+    background: #fff;
+}
+
+#card-info.redeem-reward-section table tr:nth-child(2) td {padding: 5px;}
+
+#card-info.redeem-reward-section table tr:nth-child(1) {
+    color: #fff;
+    height: 50px;
+    font-size: 15px;
+}
+
+.months {
+    margin-bottom: 20px;
+}
+
+.months div {
+    display: inline;
+    background: #34cc67;
+    padding: 5px 100px;
+    color: #fff;
+}
+
+#card-info.redeem-reward-section.white-bg {
+    background: #fff;
+}

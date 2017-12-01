@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>State Department Federal Credit Union</title>
+    <!--stylesheets-->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/statements.css" rel="stylesheet">
+    <link href="css/TurnCardOff.css" rel="stylesheet">
+    <link href="css/yearEndSummary.css" rel="stylesheet">
+    <link href="css/getANewCard.css" rel="stylesheet">
+    <link href="css/redeemToCard.css" rel="stylesheet">
+    <link href="css/overview.css" rel="stylesheet">
+    <link href="css/understandYourReward.css" rel="stylesheet">
+
+    <!--libraries-->
+    <script src="js/libraries/jquery.js"></script>
+    <script src="js/libraries/angular.js"></script>
+    <script src="js/libraries/angular-resource.js"></script>
+    <script src="js/libraries/angular-ui-router.js"></script>
+    <script src="js/libraries/bootstrap.js"></script>
+
+    <!--app-->
+    <script src="js/app/app.js"></script>
+</head>
+<body ng-app="myApp">
+<div>
+    <header ng-controller="NavCtrl as vm">
+        <div class="logo-box" ui-sref="overview">
+            <img ng-src="images/logo.png" alt="{{vm.logo.alt}}"/>
+        </div>
+        <nav id="nav-wrapper">
+            <ul id="menu">
+                <li class="dropdown-menu">
+                    <a class="dropdbtn-menu" href="">Actvity</a>
+                    <ul class="dropdown-content-menu">
+                        <li class="title">
+                            <span>Your Card Activity</span>
+                        </li>
+                        <li>
+                            <a ui-sref="statements">Statements</a>
+                        </li>
+                        <li>
+                            <a  ui-sref="yearEndSummary">Year End Summary</a>
+                        </li>
+                        <li>
+                            <a ui-sref="findASpecific">Find A Specific Transaction</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown-menu">
+                    <a class="dropdbtn-menu" href="">Payments</a>
+                    <ul class="dropdown-content-menu">
+                        <li class="title">
+                            <span>Make A Payment</span>
+                        </li>
+                        <li>
+                            <a >Payment History</a>
+                        </li>
+                        <li>
+                            <a >Set Up Auto Payment</a>
+                        </li>
+                        <li>
+                            <a>Spending Transaction</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown-menu">
+                    <a class="dropdbtn-menu" href="">Cash Back Rewards</a>
+                    <ul class="dropdown-content-menu">
+                        <li>
+                            <a >View Current Reward Balance</a>
+                        </li>
+                        <li>
+                            <a ui-sref="understandYourReward.cashBack15">Understand Your CashBack Rewards</a>
+                        </li>
+                        <li>
+                            <a style="color: forestgreen" ui-sref="redeemYourReward">Redeem Your CashBack Rewards</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown-menu">
+                    <a class="dropdbtn-menu" href="">Self-Service</a>
+                    <ul class="dropdown-content-menu">
+                        <li class="title">
+                            <span>Lost or Stolen Card</span>
+                        </li>
+                        <li>
+                            <a >Report Stolen Card</a>
+                        </li>
+                        <li>
+                            <a ui-sref="turnCardOff">Turn Card Off</a>
+                        </li>
+                        <li class="title">
+                            <span>Notifications and Alerts</span>
+                        </li>
+                        <li>
+                            <a >Set Up Alerts</a>
+                        </li>
+                        <li class="title">
+                            <span>Card Management</span>
+                        </li>
+                        <li>
+                            <a >Activate New Card</a>
+                            <a ui-sref="getANewCard">Get A New Card</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul id="account-menu">
+                <li ng-repeat="item in vm.menu.account">
+                    <a ui-sref="{{item.link}}">
+                        <i ng-class="item.icon" aria-hidden="true"></i>
+                        <span class="account-item">{{item.title}}</span>
+                    </a>
+                </li>
+            </ul>
+            <ul id="log">
+                <li><a href="#">{{vm.menu.log}}</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div ui-view></div>
+</div>
+</body>
+</html>
